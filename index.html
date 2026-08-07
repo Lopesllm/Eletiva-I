@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-BR"> 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- acessibilidade/responsivo -->
     <title>Revisão HTML e CSS</title>
 </head>
 <body>
@@ -33,5 +33,34 @@
         <p>Texto</p>
         <p>Texto + <span>Texto</span></p>
     </div>
+    <table>
+        <thead>
+            <tr>
+                <th>Coluna 1</th> <!-- th coluna head -->
+                <th>Coluna 2</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Dado 1</td> <!-- td coluna normal-->
+                <td>Dado 2</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <td colspan="2">Rodapé</td> <!-- colspan mesclar coluna; rowspan mesclar linha-->
+        </tfoot>
+    </table>
+    <form action="" method=""> <!-- criou form, obrigatório action e method -->
+        <label for="nome">Informe o nome:</label>
+        <input type="text" id="nome" name="nome">
+        <label for="desc">Descrição:</label>
+        <textarea id="desc" name="desc"></textarea>
+        <label for="opt">Opção:</label>
+        <select id="opt" name="opt">
+            <option value="1">Valor 1</option>
+            <option value="2">Valor 2</option>
+        </select>
+        <button type="submit">Enviar</button>
+    </form>
 </body>
 </html>
